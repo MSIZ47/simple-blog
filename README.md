@@ -1,4 +1,4 @@
-## **First Django Project**
+## **Blog**
 
  **Blog post** project that i did in my class in Codingyar.com Django Course first section.I practiced basics of django with this project.
 
