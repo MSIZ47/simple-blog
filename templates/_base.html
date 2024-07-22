@@ -20,7 +20,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
                 <a class="nav-link" href="{% url 'create_post' %}">New Post</a>
             </div>
@@ -32,6 +31,7 @@
                     {% csrf_token %}
                     <input class="btn btn-danger" type="submit" value="Logout">
                 </form>
+                <a href="{% url 'password_change' %}" class="btn btn-danger">Change Password</a>
             {% else %}
                 <a  class="text-light" href="{% url 'login' %}">Login</a>|<a  class="text-light" href="{% url 'signup' %}">SignUp</a>
             {% endif %}
